@@ -30,9 +30,9 @@ if (initialChoice == "Stairs")
     Console.WriteLine("You can see the front door on your left. To your right you see an open bathroom door.");
     Console.WriteLine("Which way do you go [FrontDoor] or [Bathroom]");
 
-    string Option2 = Console.ReadLine();
+    string part1Choice1 = Console.ReadLine();
 
-    if (Option2 == "FrontDoor")
+    if (part1Choice1 == "FrontDoor")
     {
         //Step 3a: First game over
         Console.WriteLine("You run for the front door.");
@@ -40,7 +40,7 @@ if (initialChoice == "Stairs")
         Console.WriteLine("GAME OVER");
     }
 
-    if (Option2 == "Bathroom")
+    if (part1Choice1 == "Bathroom")
     {
         Console.WriteLine("You quietly slip into the bathroom.");
         Console.WriteLine("You hear someone walking in your direction coming from the front door.");
@@ -49,9 +49,9 @@ if (initialChoice == "Stairs")
         Console.WriteLine("Exiting the bathroom you can now see the backdoor and the frontdoor, as well as a phone in the kitchen");
         Console.WriteLine("What do you do [Phone], [FrontDoor], or [BackDoor]");
 
-        string Option3 = Console.ReadLine();
+        string part1Choice2 = Console.ReadLine();
 
-        if (Option3 == "Phone")
+        if (part1Choice2 == "Phone")
         {
             //Step 4a: 2nd game over
             Console.WriteLine("You rush for the phone and enter 911 as fast as you can!");
@@ -60,7 +60,7 @@ if (initialChoice == "Stairs")
             Console.WriteLine("GAME OVER");
         }
 
-        if (Option3 == "FrontDoor")
+        if (part1Choice2 == "FrontDoor")
         {
             // Step 4b: 3rd game over
             Console.WriteLine("You sprint towards the front door.");
@@ -70,7 +70,7 @@ if (initialChoice == "Stairs")
             Console.WriteLine("GAME OVER");
         }
 
-        if (Option3 == "BackDoor")
+        if (part1Choice2 == "BackDoor")
         {
             // Step 4c: Advance the story/correct decision
             Console.WriteLine("You rush towards the back door!");
@@ -79,9 +79,9 @@ if (initialChoice == "Stairs")
             Console.WriteLine("The backyard is surrounded by a large fence but you could scale it if you tried. There is also a rundown shed in the backyard.");
             Console.WriteLine("Where will you go? [Shed] or [Fence]");
 
-            string Option4 = Console.ReadLine();
+            string part1Choice3 = Console.ReadLine();
 
-            if (Option4 == "Fence")
+            if (part1Choice3 == "Fence")
             {
                 // Step 5a: 4th Game Over
                 Console.WriteLine("You hurridly run to the fence and begin climbing.");
@@ -92,7 +92,7 @@ if (initialChoice == "Stairs")
                 Console.WriteLine("Unable to walk anymore the man is easily able to catch you.");
                 Console.WriteLine("GAME OVER");
             }
-            if (Option4 == "Shed")
+            if (part1Choice3 == "Shed")
             {
                 // Step 5b: 1st winning path
                 Console.WriteLine("You quickly hide in the shed.");
@@ -120,16 +120,6 @@ if (initialChoice == "Hallway")
     Console.WriteLine("Up ahead you see a fork in the road.");
     Console.WriteLine("Which path will you take [Left] or [Right]");
     string chaseForkOne = Console.ReadLine();
-    if (chaseForkOne == "Left")
-    {
-        Console.WriteLine($"You run down the path on the left, but up ahead you see another fork. {captor0}");
-        Console.WriteLine("You have another choice to make [Left] or [Right].")
-        string chaseForkTwo = Console.ReadLine();
-        if (chaseForkTwo == "Left")
-        {
-            Console.WriteLine("")
-        }
-    }
 }
 
 // you open the big metal door, causing a loud sound. You're captor is hot on your tail
