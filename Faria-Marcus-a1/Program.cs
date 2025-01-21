@@ -6,6 +6,11 @@
 
 // Step 1: Introduce the player to their surroundings
 
+string captor0 = "you have distance on your captor.";
+string captor1 = "Your captor draws close.";
+string captor2 = "Your captor advances.";
+string captor3 = "Your caotor approaches.";
+
 Console.WriteLine("You awake in a pitch black room. The events of the previous night start to return to you in a haze.");
 Console.WriteLine("You remember being in a bar, talking with a strange man than blacking out.");
 Console.WriteLine("He must have put something in your drink! You feel chains around your wrists, but they are loose and you quickly slip out of them.");
@@ -15,9 +20,9 @@ Console.WriteLine("To your left is a staircase going up. To your right is a hall
 // Step 2: introduce the first choice
 Console.WriteLine("Which way will you go, [Stairs] or [Hallway]");
 
-string Option1 = Console.ReadLine();
+string initialChoice = Console.ReadLine();
 
-if (Option1 == "Stairs")
+if (initialChoice == "Stairs")
 {
     // Step 2a: Main Conditional statements section
     Console.WriteLine("You quickly run up the stairs.");
@@ -103,23 +108,27 @@ if (Option1 == "Stairs")
     }
 }
 
-if (Option1 == "Hallway")
+if (initialChoice == "Hallway")
 {
     // Step 2b: 
-    int playerHealth = 100;
 
     Console.WriteLine("You quickly run down the hallway.");
     Console.WriteLine("At the end of the hallway is a large metal door, opening it looks like it would make a loud noise.");
     Console.WriteLine("Before you have time to turn around, you hear a door at the top of the stairs open and someone walking down.");
     Console.WriteLine("Quickly, you open the door and run through.");
     Console.WriteLine("As you run down the path behind the door, you hear your captor chasing behind you.");
-    Console.WriteLine("Up ahead you see a potential shortcut, but it looks dangerous. You could also take the safe path but you risk your captor catching you.");
-    Console.WriteLine("Which path will you take [Shortcut] or [Safe]");
-    string chaseOption1 = Console.ReadLine();
-    if (chaseOption1 == "Shortcut")
+    Console.WriteLine("Up ahead you see a fork in the road.");
+    Console.WriteLine("Which path will you take [Left] or [Right]");
+    string chaseForkOne = Console.ReadLine();
+    if (chaseForkOne == "Left")
     {
-        Console.WriteLine("You run down the shortcut but you get hurt on the way");
-        Console.WriteLine(""
+        Console.WriteLine($"You run down the path on the left, but up ahead you see another fork. {captor0}");
+        Console.WriteLine("You have another choice to make [Left] or [Right].")
+        string chaseForkTwo = Console.ReadLine();
+        if (chaseForkTwo == "Left")
+        {
+            Console.WriteLine("")
+        }
     }
 }
 
