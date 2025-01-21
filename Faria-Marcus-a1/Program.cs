@@ -103,9 +103,26 @@ if (Option1 == "Stairs")
     }
 }
 
-
 if (Option1 == "Hallway")
 {
     // Step 2b: 
     Console.WriteLine("You run down the hallway.");
+    Console.WriteLine("At the end of the hallway is a large metal door and a wooden hatch on the ground.");
+    Console.WriteLine("The door looks like it would be loud, but the hatch, seemingly, leads underground.");
+    Console.WriteLine("Suddenly, you hear the basement door open and someone walking down the stairs, you have to choose quickly!");
+    Console.WriteLine("Which way do you go [MetalDoor] or [Hatch]");
+    string Option5 = Console.ReadLine();
+    if (Option5 == "Hatch")
+    {
+        // Part 2:  section
+        Console.WriteLine("You open the hatch and start climbing down the ladder, closing the hatch behind you.");
+        Console.WriteLine("At the bottom of the ladder you find a ");
+        Console.WriteLine("");
+        Console.WriteLine("");
+        Console.WriteLine("");
+    }
+    if (Option5 == "MetalDoor")
+    {
+        Console.WriteLine("You open the metal door, causing a loud sound as expected.");
+    }
 }
