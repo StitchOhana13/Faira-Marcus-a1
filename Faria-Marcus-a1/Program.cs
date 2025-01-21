@@ -106,23 +106,24 @@ if (Option1 == "Stairs")
 if (Option1 == "Hallway")
 {
     // Step 2b: 
-    Console.WriteLine("You run down the hallway.");
-    Console.WriteLine("At the end of the hallway is a large metal door and a wooden hatch on the ground.");
-    Console.WriteLine("The door looks like it would be loud, but the hatch, seemingly, leads underground.");
-    Console.WriteLine("Suddenly, you hear the basement door open and someone walking down the stairs, you have to choose quickly!");
-    Console.WriteLine("Which way do you go [MetalDoor] or [Hatch]");
-    string Option5 = Console.ReadLine();
-    if (Option5 == "Hatch")
+    int playerHealth = 100;
+
+    Console.WriteLine("You quickly run down the hallway.");
+    Console.WriteLine("At the end of the hallway is a large metal door, opening it looks like it would make a loud noise.");
+    Console.WriteLine("Before you have time to turn around, you hear a door at the top of the stairs open and someone walking down.");
+    Console.WriteLine("Quickly, you open the door and run through.");
+    Console.WriteLine("As you run down the path behind the door, you hear your captor chasing behind you.");
+    Console.WriteLine("Up ahead you see a potential shortcut, but it looks dangerous. You could also take the safe path but you risk your captor catching you.");
+    Console.WriteLine("Which path will you take [Shortcut] or [Safe]");
+    string chaseOption1 = Console.ReadLine();
+    if (chaseOption1 == "Shortcut")
     {
-        // Part 2:  section
-        Console.WriteLine("You open the hatch and start climbing down the ladder, closing the hatch behind you.");
-        Console.WriteLine("At the bottom of the ladder you find a ");
-        Console.WriteLine("");
-        Console.WriteLine("");
-        Console.WriteLine("");
-    }
-    if (Option5 == "MetalDoor")
-    {
-        Console.WriteLine("You open the metal door, causing a loud sound as expected.");
+        Console.WriteLine("You run down the shortcut but you get hurt on the way");
+        Console.WriteLine(""
     }
 }
+
+// you open the big metal door, causing a loud sound. You're captor is hot on your tail
+// Chase sequence with health. Minecraft warden approaching. Fast causes you to lose health but gets you away from the captor,
+// slow prevents you from losing health but captor gets closer. 5 choices choices 2 and 4 do more damage.
+// 
