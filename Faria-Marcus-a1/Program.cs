@@ -6,10 +6,8 @@
 
 // Step 1: Introduce the player to their surroundings
 
-string captor0 = "you have distance on your captor.";
 string captor1 = "Your captor draws close.";
-string captor2 = "Your captor advances.";
-string captor3 = "Your caotor approaches.";
+string captor2 = "Your captor approaches.";
 
 Console.WriteLine("You awake in a pitch black room. The events of the previous night start to return to you in a haze.");
 Console.WriteLine("You remember being in a bar, talking with a strange man than blacking out.");
@@ -110,19 +108,173 @@ if (initialChoice == "Stairs")
 
 if (initialChoice == "Hallway")
 {
-    // Step 2b: 
+    // Step 2b: Maze to fusebox math riddles
 
     Console.WriteLine("You quickly run down the hallway.");
-    Console.WriteLine("At the end of the hallway is a large metal door, opening it looks like it would make a loud noise.");
-    Console.WriteLine("Before you have time to turn around, you hear a door at the top of the stairs open and someone walking down.");
-    Console.WriteLine("Quickly, you open the door and run through.");
-    Console.WriteLine("As you run down the path behind the door, you hear your captor chasing behind you.");
-    Console.WriteLine("Up ahead you see a fork in the road.");
-    Console.WriteLine("Which path will you take [Left] or [Right]");
-    string chaseForkOne = Console.ReadLine();
+    Console.WriteLine("You quickly realize the hallway turns into a pitch black maze.");
+    Console.WriteLine("Before you can think to turn around, you hear a door at the top of the stairs open and someone coming down.");
+    Console.WriteLine("You quickly run deeper into the maze hoping you'll find a way out... If there is one.");
+    Console.WriteLine("After traversing the maze for a few minutes you find a wooden door.");
+    Console.WriteLine("Hoping you found a way out you open it, only to find a small room with no other exits.");
+    Console.WriteLine("Looking around the room, sitting atop a large wooden box, you find what looks like a large cylindrical fuse.");
+    Console.WriteLine("You take it, hoping it may lead to your survival.");
+    Console.WriteLine("A few minutes later, you find a staircase leading down. With no other way to go, you head down.");
+    Console.WriteLine("At the bottom of the stairs you find a lit room. On the walls are 3 fuseboxes with power lines connecting to a large electrical metal door at the end of the room.");
+    Console.WriteLine("You quickly surmise that 2 of fuseboxes are locked and none of them are powered.");
+    Console.WriteLine("As you open the third fusebox you find that it is missing a fuse. Thankful you grabbed the fuse earlier you place it in the box.");
+    Console.WriteLine("The fuse box hums to life. As it starts you notice a math riddle on the fusebox, the only to fully power it on is to solve the equation.");
+    Console.WriteLine("You get to work solving.");
+    Console.WriteLine("Solve the riddle (How many 9's are there between 1 and 100?)");
+    Console.WriteLine("[Answer in whole numbers]");
+    string mathRiddle1 = Console.ReadLine();
+    if (mathRiddle1 == "20")
+    {
+        Console.WriteLine("The console flashes green and power is delivered to the door.");
+        Console.WriteLine("But the door isn't open yet. as you prepare to go back up the stairs, one of the locked fuseboxes opens revealing the necessary fuse inside of it.");
+        Console.WriteLine("Placing the the fuse inside the box you prepare yourself for another Math Riddle.");
+        Console.WriteLine("Solve the riddle (When my father was 31 I was 8. Now he is twice as old as me. How old am I?");
+        Console.WriteLine("[Answer in whole numbers]");
+        string mathRiddle2 = Console.ReadLine();
+        if (mathRiddle2 == "23")
+        {
+            Console.WriteLine("Once again the console flashes green.");
+            Console.WriteLine("The final fusebox opens and you once again prepare youself for the final riddle.");
+            Console.WriteLine("Solve the riddle (I am four times as old as my daughter. In 20 years time I shall be twice as old as her. How old am I now?)");
+            Console.WriteLine("[Answer in whole numbers]");
+            string mathRiddle3 = Console.ReadLine();
+            if (mathRiddle3 == "40")
+            {
+                Console.WriteLine("The console flashes green, and power is sent to the door.");
+                Console.WriteLine("You watch the door open and start to hear footsteps quickly running down the stairs behind you.");
+                Console.WriteLine("You run through the door finding a ladder behind. With nowhere else to go you quickly start climbing up.");
+                Console.WriteLine("As you reach the top of the ladder, you push a wooden hatch open a find yourself in what looks like a rundown shed.");
+                Console.WriteLine("At the back of the shed you see a hole that leads to the other side of a fence, you quickly crawl through");
+                Console.WriteLine("Now on the other side of the fence you make a run for it!");
+                Console.WriteLine("You are free from you captor, you have survived!");
+                Console.WriteLine("CONGRATULATIONS YOU SURVIVED!");
+            }
+            if (mathRiddle3 != "40")
+            {
+                Console.WriteLine("The console flashes red and before you have the chance to try again someone grabs you grab behind.");
+                Console.WriteLine("GAME OVER");
+            }
+        }
+        if (mathRiddle2 != "23")
+        {
+            Console.WriteLine($"The screen flashes red you must quickly try again. {captor2}");
+            Console.WriteLine("Solve the riddle (I am four times as old as my daughter. In 20 years time I shall be twice as old as her. How old am I now?)");
+            Console.WriteLine("[Answer in whole numbers]");
+            string mathRiddle4 = Console.ReadLine();
+            if (mathRiddle4 == "23")
+            {
+                Console.WriteLine("Once again the console flashes green.");
+                Console.WriteLine("The final fusebox opens and you once again prepare youself for the final riddle.");
+                Console.WriteLine("Solve the riddle (I am four times as old as my daughter. In 20 years time I shall be twice as old as her. How old am I now?)");
+                Console.WriteLine("[Answer in whole numbers]");
+                string mathRiddle5 = Console.ReadLine();
+                if (mathRiddle5 == "40")
+                {
+                    Console.WriteLine("The console flashes green, and power is sent to the door.");
+                    Console.WriteLine("You watch the door open and start to hear footsteps quickly running down the stairs behind you.");
+                    Console.WriteLine("You run through the door finding a ladder behind. With nowhere else to go you quickly start climbing up.");
+                    Console.WriteLine("As you reach the top of the ladder, you push a wooden hatch open a find yourself in what looks like a rundown shed.");
+                    Console.WriteLine("At the back of the shed you see a hole that leads to the other side of a fence, you quickly crawl through");
+                    Console.WriteLine("Now on the other side of the fence you make a run for it!");
+                    Console.WriteLine("You are free from you captor, you have survived!");
+                    Console.WriteLine("CONGRATULATIONS YOU SURVIVED!");
+                }
+                if (mathRiddle5 != "40")
+                {
+                    Console.WriteLine("The console flashes red and before you have the chance to try again someone grabs you grab behind.");
+                    Console.WriteLine("GAME OVER");
+                }
+            }
+            if (mathRiddle4 != "23")
+            {
+                Console.WriteLine("The console flashes red and before you have the chance to try again someone grabs you grab behind.");
+                Console.WriteLine("GAME OVER");
+            }
+        }
+    }
+    if (mathRiddle1 != "20")
+    {
+        Console.WriteLine($"The screen flashes red you must quickly try again. {captor1}");
+        Console.WriteLine("Solve the riddle (How many 9's are there between 1 and 100?)");
+        Console.WriteLine("[Answer in whole numbers]");
+        string mathRiddle6 = Console.ReadLine();
+        if (mathRiddle6 == "20")
+        {
+            Console.WriteLine("The console flashes green and power is delivered to the door.");
+            Console.WriteLine("But the door isn't open yet. as you prepare to go back up the stairs, one of the locked fuseboxes opens revealing the necessary fuse inside of it.");
+            Console.WriteLine("Placing the the fuse inside the box you prepare yourself for another Math Riddle.");
+            Console.WriteLine("Solve the riddle (When my father was 31 I was 8. Now he is twice as old as me. How old am I?");
+            Console.WriteLine("[Answer in whole numbers]");
+            string mathRiddle2 = Console.ReadLine();
+            if (mathRiddle2 == "23")
+            {
+                Console.WriteLine("Once again the console flashes green.");
+                Console.WriteLine("The final fusebox opens and you once again prepare youself for the final riddle.");
+                Console.WriteLine("Solve the riddle (I am four times as old as my daughter. In 20 years time I shall be twice as old as her. How old am I now?)");
+                Console.WriteLine("[Answer in whole numbers]");
+                string mathRiddle3 = Console.ReadLine();
+                if (mathRiddle3 == "40")
+                {
+                    Console.WriteLine("The console flashes green, and power is sent to the door.");
+                    Console.WriteLine("You watch the door open and start to hear footsteps quickly running down the stairs behind you.");
+                    Console.WriteLine("You run through the door finding a ladder behind. With nowhere else to go you quickly start climbing up.");
+                    Console.WriteLine("As you reach the top of the ladder, you push a wooden hatch open a find yourself in what looks like a rundown shed.");
+                    Console.WriteLine("At the back of the shed you see a hole that leads to the other side of a fence, you quickly crawl through");
+                    Console.WriteLine("Now on the other side of the fence you make a run for it!");
+                    Console.WriteLine("You are free from you captor, you have survived!");
+                    Console.WriteLine("CONGRATULATIONS YOU SURVIVED!");
+                }
+                if (mathRiddle3 != "40")
+                {
+                    Console.WriteLine("The console flashes red and before you have the chance to try again someone grabs you grab behind.");
+                    Console.WriteLine("GAME OVER");
+                }
+            }
+            if (mathRiddle2 != "23")
+            {
+                Console.WriteLine($"The screen flashes red you must quickly try again. {captor2}");
+                Console.WriteLine("Solve the riddle (I am four times as old as my daughter. In 20 years time I shall be twice as old as her. How old am I now?)");
+                Console.WriteLine("[Answer in whole numbers]");
+                string mathRiddle4 = Console.ReadLine();
+                if (mathRiddle4 == "23")
+                {
+                    Console.WriteLine("Once again the console flashes green.");
+                    Console.WriteLine("The final fusebox opens and you once again prepare youself for the final riddle.");
+                    Console.WriteLine("Solve the riddle (I am four times as old as my daughter. In 20 years time I shall be twice as old as her. How old am I now?)");
+                    Console.WriteLine("[Answer in whole numbers]");
+                    string mathRiddle5 = Console.ReadLine();
+                    if (mathRiddle5 == "40")
+                    {
+                        Console.WriteLine("The console flashes green, and power is sent to the door.");
+                        Console.WriteLine("You watch the door open and start to hear footsteps quickly running down the stairs behind you.");
+                        Console.WriteLine("You run through the door finding a ladder behind. With nowhere else to go you quickly start climbing up.");
+                        Console.WriteLine("As you reach the top of the ladder, you push a wooden hatch open a find yourself in what looks like a rundown shed.");
+                        Console.WriteLine("At the back of the shed you see a hole that leads to the other side of a fence, you quickly crawl through");
+                        Console.WriteLine("Now on the other side of the fence you make a run for it!");
+                        Console.WriteLine("You are free from you captor, you have survived!");
+                        Console.WriteLine("CONGRATULATIONS YOU SURVIVED!");
+                    }
+                    if (mathRiddle5 != "40")
+                    {
+                        Console.WriteLine("The console flashes red and before you have the chance to try again someone grabs you grab behind.");
+                        Console.WriteLine("GAME OVER");
+                    }
+                }
+                if (mathRiddle4 != "23")
+                {
+                    Console.WriteLine("The console flashes red and before you have the chance to try again someone grabs you grab behind.");
+                    Console.WriteLine("GAME OVER");
+                }
+            }
+        }
+        if (mathRiddle6 != "20")
+        {
+            Console.WriteLine("The console flashes red and before you have the chance to try again someone grabs you grab behind.");
+            Console.WriteLine("GAME OVER");
+        }
+    }
 }
-
-// you open the big metal door, causing a loud sound. You're captor is hot on your tail
-// Chase sequence with health. Minecraft warden approaching. Fast causes you to lose health but gets you away from the captor,
-// slow prevents you from losing health but captor gets closer. 5 choices choices 2 and 4 do more damage.
-// 
