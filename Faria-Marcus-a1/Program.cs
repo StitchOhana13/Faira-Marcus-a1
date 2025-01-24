@@ -10,8 +10,8 @@ string captor1 = "Your captor draws close.";
 string captor2 = "Your captor approaches.";
 
 Console.WriteLine("You awake in a pitch black room. The events of the previous night start to return to you in a haze.");
-Console.WriteLine("You remember being in a bar, talking with a strange man than blacking out.");
-Console.WriteLine("He must have put something in your drink! You feel chains around your wrists, but they are loose and you quickly slip out of them.");
+Console.WriteLine("You remember being in a bar, talking with a strange man, than blacking out.");
+Console.WriteLine("He must have put something in your drink! You feel chains around your wrists, but they are too loose and you quickly slip out of them.");
 Console.WriteLine("As your eyes adjust to the darkness, you begin to make things out.");
 Console.WriteLine("To your left is a staircase going up. To your right is a hallway that seemingly leads deeper into this dark place.");
 
@@ -25,7 +25,7 @@ if (initialChoice == "Stairs")
     // Step 2a: Main Conditional statements section
     Console.WriteLine("You quickly run up the stairs.");
     Console.WriteLine("You reach the top of the stairs and find yourself on the ground floor of a house.");
-    Console.WriteLine("You can see the front door on your left. To your right you see an open bathroom door.");
+    Console.WriteLine("You can see the front door on your left. To your right, you see an open bathroom door.");
     Console.WriteLine("Which way do you go [FrontDoor] or [Bathroom]");
 
     string part1Choice1 = Console.ReadLine();
@@ -34,7 +34,7 @@ if (initialChoice == "Stairs")
     {
         //Step 3a: First game over
         Console.WriteLine("You run for the front door.");
-        Console.WriteLine("Suddenly, the man from the bar steps out from around the corner wielding a knife!");
+        Console.WriteLine("Suddenly, the man from the bar steps out from around the corner, wielding a knife!");
         Console.WriteLine("GAME OVER");
     }
 
@@ -43,8 +43,8 @@ if (initialChoice == "Stairs")
         Console.WriteLine("You quietly slip into the bathroom.");
         Console.WriteLine("You hear someone walking in your direction coming from the front door.");
         Console.WriteLine("They open the basement door and start heading down");
-        Console.WriteLine("With your opening you slip out of the bathroom.");
-        Console.WriteLine("Exiting the bathroom you can now see the backdoor and the frontdoor, as well as a phone in the kitchen");
+        Console.WriteLine("With your opening, you slip out of the bathroom.");
+        Console.WriteLine("Exiting the bathroom, you can now see the backdoor and the frontdoor, as well as a phone in the kitchen");
         Console.WriteLine("What do you do [Phone], [FrontDoor], or [BackDoor]");
 
         string part1Choice2 = Console.ReadLine();
@@ -63,8 +63,8 @@ if (initialChoice == "Stairs")
             // Step 4b: 3rd game over
             Console.WriteLine("You sprint towards the front door.");
             Console.WriteLine("As you placed your hand on the knob you feel something shift underneath your feet.");
-            Console.WriteLine("Suddenly the floor fall away beneth you and you find yourself in a deep hole.");
-            Console.WriteLine("As you look up you see the man standing at the top of the hole staring down at you");
+            Console.WriteLine("Suddenly the floor falls away from beneth you, and you find yourself in a deep hole.");
+            Console.WriteLine("As you look up you see the man standing at the top of the hole staring down at you.");
             Console.WriteLine("GAME OVER");
         }
 
@@ -72,7 +72,7 @@ if (initialChoice == "Stairs")
         {
             // Step 4c: Advance the story/correct decision
             Console.WriteLine("You rush towards the back door!");
-            Console.WriteLine("Stepping out into the backyard you can hear the man running up the stair behind you.");
+            Console.WriteLine("Stepping out into the backyard, you can hear the man running up the stairs behind you.");
             Console.WriteLine("You need to act quick");
             Console.WriteLine("The backyard is surrounded by a large fence but you could scale it if you tried. There is also a rundown shed in the backyard.");
             Console.WriteLine("Where will you go? [Shed] or [Fence]");
